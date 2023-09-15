@@ -1,0 +1,253 @@
+*{
+    margin:10px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+/* ------------ HEADER -----------*/
+
+header{
+    background-image: url("./img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: content;
+    background-position: center;
+}
+
+/* --------- Estilos nav -------- */
+
+.container_nav{
+    
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-evenly;
+    padding:5px;
+    align-items: center;
+   
+}
+
+.item_nav_logo{
+    display: flex;
+    align-self: flex-start;
+    
+}
+
+.logo{
+    display: flex;
+    align-self: flex-start;
+    padding-left: 0px;
+    width: 80px;
+    height: 80px;
+}
+
+.item_nav{
+   
+    color: #919191;
+    flex-grow: 2;
+    flex-basis: 50%;
+}
+
+.item_nav:hover{
+    color:rgb(228, 147, 76);
+}
+
+i:hover{ 
+    color:rgb(228, 147, 76)
+}
+
+.item_nav_rrss{
+    color: #919191;
+    flex-grow: 2;
+    flex-basis: 10%;
+}
+
+
+/* ----------- Estilos section --------*/
+
+.container_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+
+.item_section{
+    
+    color: rgba(228, 147, 76, 0.762);
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #b9baba7d;
+    background-size: 900px 800px;
+    margin-bottom: 0px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+    
+}
+
+/* -------------- MAIN ------------------ */
+
+.container_main{
+    
+    display:flex;
+    padding: 0px;
+    background-color: #b9baba7d;
+
+}
+
+.container_section2{
+    background-color:rgb(200, 201, 201);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    color:rgb(108, 110, 110);
+    padding: 0%;
+   
+}
+
+.item_section2{
+    background-color:rgb(234, 241, 236);
+    display: flex;
+    flex-flow: column wrap;
+    width: 380px;
+    
+}
+
+.img_section{
+    width: 360px;
+    height: 200px;
+    padding: 0px;
+}
+
+h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(228, 147, 76);
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    padding-left: 10px;
+}
+
+p{
+    column-count: 2;
+    column-gap: 20px;
+    
+}
+
+.leer-mas{
+    color:#919191;
+}
+
+.leer-mas:hover{
+    color: rgb(228, 147, 76);
+}
+
+.item_section22{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0px;
+
+}
+
+/* ------ estilos aside --------- */
+
+.container_aside{
+    background-color:rgb(200, 201, 201);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content:start;
+    
+}
+
+.item_aside{
+  
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 10px;
+  
+}
+h4{
+    text-align: center;
+}
+
+/*------------ FOOTER ---------*/
+
+.container_footer{
+    display: flex;
+    justify-content:center;
+    background-color:rgb(170, 173, 173);
+    
+}
+
+.item_footer{
+    background-color: rgb(234, 241, 236);
+    height: 2em;
+    flex-basis: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    color:rgb(108, 110, 110);
+    padding-top: 5px;
+}
+
+/* -------- Responsive tablet ---------- */
+
+@media(max-width:768px){
+
+    .container_nav{
+        flex-wrap:nowrap;
+        
+    }
+
+    .container_main{
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        
+    }
+
+    .container_section2{
+        flex:auto;
+    }
+
+    .container_aside{
+        flex-grow: 100%;
+       
+    }
+}
+
+/* ------ Responsive móvil ---------- */
+
+@media(max-width:576px){
+
+    .container_nav{
+        flex-wrap: wrap;
+    }
+
+    .item_nav .item_nav_logo{
+        flex-grow: auto;
+    }
+
+    .container_main{
+        flex-wrap: wrap;  
+    }
+
+    
+
+    .container_section2{
+        flex-grow: 6;
+    }
+
+    .container_aside{
+        flex-grow: 6;
+        
+    }
+
+} 
